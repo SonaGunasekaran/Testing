@@ -2,57 +2,28 @@
 
 namespace Testing
 {
-    class Dog
+
+    class Program
     {
-
-        private string dogName;
-        private int dogAge;
-
-        public string Name
+        
+        public static void Main(string[] args)
         {
-            get
+            int empPresent = 1;
+            int empAbsent = 0;
+            Random random = new Random();
+            int empInput = random.Next(0, 2);
+            if(empInput==1)
             {
-                return dogName;
-            }
-            set
-            {
-                dogName =value;
+                Console.WriteLine("Employee is Present");
 
             }
-        }
-
-        public int Age
-        {
-            get
+            else
             {
-                return dogAge;
+                Console.WriteLine("Employee is Absent");
             }
-            set
-            {
-                 dogAge = value;
 
-            }
         }
     }
-
-    
-
-
-        class Program
-        {
-
-
-            static void Main(string[] args)
-            {
-               Dog myObj = new Dog();
-                
-                myObj.Name = "brown";
-                myObj.Age =12;
-
-                 Console.WriteLine("My dog name is"  + myObj.Name +  "his age is"  + myObj.Age);
-                Console.WriteLine("Hello World!");
-              
-            }
-        }
-    }
+         
+}
 
