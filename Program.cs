@@ -12,7 +12,7 @@ namespace Testing
             int empAbsent = 0;
             Random random = new Random();
             int empInput = random.Next(0, 2);
-            if(empInput==1)
+            if(empInput==0)
             {
                 Console.WriteLine("Employee is Present");
 
